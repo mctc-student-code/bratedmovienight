@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MoviesBox</string>
+    <string name="content_description_image_viewer">Plakat</string>
+    <string name="content_description_movie_poster_thumbnail">Miniaturka plakatu</string>
+    <string name="no_movies">Brak filmów</string>
+    <string name="no_network">Brak internetu</string>
+    <string name="pref_sort_orders_label">Pokaż filmy</string>
+    <string name="pref_sort_orders_label_popular">Popularne</string>
+    <string name="pref_sort_orders_label_top_rated">Najwyżej oceniane</string>
+    <string name="pref_sort_orders_label_favorites">Ulubione</string>
+    <string name="title_activity_settings">Ustawienia</string>
+    <string name="reviews">Recenzje</string>
+    <string name="trailers">Trailery</string>
+    <string name="no_trailers">Brak trailerów</string>
+    <string name="no_reviews">Brak recenzji</string>
+    <string name="add_to_favorites">Dodaj do ulubionych</string>
+    <string name="remove_from_favorites">Usuń z ulubionych</string>
+    <string name="share_trailer">Udostępnij trailer</string>
+    <string name="share_trailer_title">Obejrzyj ten trailer</string>
+</resources>

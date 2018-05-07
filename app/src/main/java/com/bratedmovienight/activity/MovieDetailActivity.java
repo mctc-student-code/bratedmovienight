@@ -7,10 +7,10 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-import com.bratedmovienight.moviesbox.R;
-import com.bratedmovienight.moviesbox.data.MoviesRepository;
-import com.bratedmovienight.moviesbox.fragment.MovieDetailFragment;
-import com.bratedmovienight.moviesbox.model.Movie;
+import com.bratedmovienight.R;
+import com.bratedmovienight.data.MoviesRepository;
+import com.bratedmovienight.fragment.MovieDetailFragment;
+import com.bratedmovienight.model.Movie;
 
 public class MovieDetailActivity extends AppCompatActivity {
     // region CONSTANTS

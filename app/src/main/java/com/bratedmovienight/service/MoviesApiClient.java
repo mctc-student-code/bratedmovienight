@@ -1,10 +1,10 @@
 package com.bratedmovienight.service;
 
 
-import com.example.moviesbox.BuildConfig;
-import com.example.moviesbox.model.Movies;
-import com.example.moviesbox.model.Reviews;
-import com.example.moviesbox.model.Trailers;
+import com.bratedmovienight.BuildConfig;
+import com.bratedmovienight.model.Movies;
+import com.bratedmovienight.model.Reviews;
+import com.bratedmovienight.model.Trailers;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

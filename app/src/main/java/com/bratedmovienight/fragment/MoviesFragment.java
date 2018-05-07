@@ -40,9 +40,6 @@ import com.bratedmovienight.view.MoviesView;
 
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.Unbinder;
 import de.mateware.snacky.Snacky;
 
 import static com.bratedmovienight.data.MoviesRepository.FAVORITES;
@@ -92,8 +89,6 @@ public class MoviesFragment extends Fragment implements MoviesView, SharedPrefer
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_movies, container, false);
-
-        mUnbinder = ButterKnife.bind(this, view);
 
         if (savedInstanceState != null) {
             if (savedInstanceState.containsKey(STATE_VISIBLE_POSITION)) {

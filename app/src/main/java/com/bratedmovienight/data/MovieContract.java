@@ -6,7 +6,7 @@ import android.net.Uri;
 import android.provider.BaseColumns;
 
 public final class MovieContract {
-    public static final String CONTENT_AUTHORITY = "com.example.moviesbox.movies";
+    public static final String CONTENT_AUTHORITY = "com.bratedmovienight.movies";
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
 
     private MovieContract() {}

@@ -24,11 +24,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.moviesbox.R;
-import com.example.moviesbox.activity.ImageViewerActivity;
-import com.example.moviesbox.data.MovieContract;
-import com.example.moviesbox.data.MoviesRepository;
-import com.example.moviesbox.model.Movie;
+import com.bratedmovienight.R;
+import com.bratedmovienight.activity.ImageViewerActivity;
+import com.bratedmovienight.data.MovieContract;
+import com.bratedmovienight.data.MoviesRepository;
+import com.bratedmovienight.model.Movie;
 import com.squareup.picasso.Picasso;
 
 import java.text.DateFormat;
@@ -40,7 +40,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
-import static com.example.moviesbox.R.id.menu_favorite_action;
+import static com.bratedmovienight.R.id.menu_favorite_action;
 
 /**
  * A simple {@link Fragment} subclass.

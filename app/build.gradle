@@ -1,14 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
     defaultConfig {
-        applicationId "com.pam.b_ratedmovienight"
+        applicationId "com.bratedmovienight"
         minSdkVersion 19
-        targetSdkVersion 27
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -16,13 +18,49 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    buildTypes.each {
+        it.buildConfigField 'String', 'MOVIES_DB_API_KEY', MoviesDbApiKey
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:26+'
+    implementation 'com.android.support:design:26+'
+    implementation 'com.android.support:recyclerview-v7:26+'
+    implementation 'com.android.support:cardview-v7:26+'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.0-alpha8'
+    implementation 'com.android.support:preference-v7:26+'
+    implementation 'com.android.support:preference-v14:26+'
+    implementation 'com.android.support:support-annotations:26+'
+    implementation 'com.jakewharton:butterknife:8.6.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.8'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.android.support:support-v4:26+'
+    implementation 'com.android.support:support-vector-drawable:26+'
+    implementation 'com.github.matecode:Snacky:1.0.3'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    testImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    // Google authentication
+    implementation 'com.google.android.gms:play-services-auth:11.0.4'
+
+    //Google maps
+    implementation 'com.google.android.gms:play-services-maps:11.0.4'
+
+    //Firebase
+    implementation 'com.google.firebase:firebase-database:11.0.4'
+    implementation 'com.google.firebase:firebase-auth:11.0.4'
 }

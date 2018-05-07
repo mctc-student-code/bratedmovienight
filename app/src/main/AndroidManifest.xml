@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.bratedmovienight.moviesbox">
+          package="com.bratedmovienight">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -27,14 +27,14 @@
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.bratedmovienight.moviesbox.activity.MainActivity" />
+                android:value="com.bratedmovienight.activity.MainActivity" />
         </activity>
         <activity
             android:name=".activity.ImageViewerActivity"
             android:parentActivityName=".activity.MovieDetailActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.bratedmovienight.moviesbox.activity.MovieDetailActivity" />
+                android:value="com.bratedmovienight.activity.MovieDetailActivity" />
         </activity>
         <activity
             android:name=".activity.SettingsActivity"
@@ -42,11 +42,11 @@
             android:parentActivityName=".activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.bratedmovienight.moviesbox.activity.MainActivity" />
+                android:value="com.bratedmovienight.activity.MainActivity" />
         </activity>
 
         <provider
-            android:authorities="com.bratedmovienight.moviesbox.movies"
+            android:authorities="com.bratedmovienight.movies"
             android:name=".data.MoviesProvider"
             android:exported="false" />
     </application>

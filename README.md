@@ -30,8 +30,8 @@ Minimal SDK version: 21
 
 Movie Details           |  Added to Wishlist
 :-------------------------:|:-------------------------:
- (Screenshots/Movie Detail Screen.png)|  (Screenshots/Added to Wishlist Screen.png)
+ [Movie Details](Screenshots/Movie Detail Screen.png)|[Added to Wishlist](Screenshots/Added to Wishlist Screen.png)
 
 Main Screen         |  Search Screen
 :-------------------------:|:-------------------------:
-(Screenshots/Main Screen.png)|  (Screenshots/Search Screen.png)
+[Main Screen](Screenshots/Main Screen.png)|[Search Screen](Screenshots/Search Screen.png)

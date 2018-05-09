@@ -25,9 +25,6 @@ Android SDK, Android Studio/Eclipse IDE/etc
 Minimal SDK version: 21
 
 # Screenshots
-
-## Screenshots
-
 Movie Details           |  Added to Wishlist
 :-------------------------:|:-------------------------:
  ![Movie Details](Screenshots/MovieDetailScreen.png)| ![Added to Wishlist](Screenshots/AddedtoWishlistScreen.png)

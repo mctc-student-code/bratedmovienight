@@ -15,9 +15,9 @@ Firebase authentication and Realtime Database to save user data
 The Movies Database API to get movies/tv-shows data
 
 # Libraries used
-Retrofit – the HTTP Client for Android
-Gson – java serialization library to convert objects to JSON and back
-Glide – image loading and caching library for Android
+* [Retrofit](http://square.github.io/retrofit/) – the HTTP Client for Android
+* [Gson](https://github.com/google/gson) – java serialization library to convert objects to JSON and back
+* [Glide](https://github.com/bumptech/glide) – image loading and caching library for Android
 
 # Pre-requisites
 Android SDK, Android Studio/Eclipse IDE/etc
@@ -30,8 +30,8 @@ Minimal SDK version: 21
 
 Movie Details           |  Added to Wishlist
 :-------------------------:|:-------------------------:
- |  
+ (Screenshots/Movie Detail Screen.png)|  (Screenshots/Added to Wishlist Screen.png)
 
 Main Screen         |  Search Screen
 :-------------------------:|:-------------------------:
-|  
+(Screenshots/Main Screen.png)|  (Screenshots/Search Screen.png)

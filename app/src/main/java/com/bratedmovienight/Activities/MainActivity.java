@@ -100,7 +100,6 @@ public class MainActivity extends MenuActivity {
     @Override
     protected void onStart() {
         super.onStart();
-
         mProfileName.setText(user.getDisplayName());
 
         Glide.with(getApplicationContext())

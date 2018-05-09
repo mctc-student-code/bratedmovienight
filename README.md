@@ -1,4 +1,4 @@
-## bratedmovienight
+# bratedmovienight
 
 Android application to explore movies 
 
